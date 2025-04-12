@@ -9,11 +9,8 @@ from datetime import datetime
 
 
 
-# 🔐 Укажи свой токен от BotFather
+#  Стягиваем параметры из .env
 TOKEN = os.environ.get("BOT_TOKEN")
-# 📁 Укажи базовую директорию, куда сохранять фото
-
-###############BASE_DIR = "/Users/sib-coder/Documents/учеба/TGBOT/fotodir"
 BASE_DIR = os.environ.get("BASE_DIR")
 
 async def save_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
