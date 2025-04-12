@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  telegram_bot:
+    build: .
+    container_name: tg-bot-image
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      - ./fotodir:/app/fotodir
